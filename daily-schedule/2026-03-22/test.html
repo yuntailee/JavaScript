@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0322</title>
+</head>
+<h1>為甚麼要用 const </h1>
+<p>因為習慣了，因為 let 可以重新賦值，且不需要先提供初始值；而 const 則不可重新賦值，且需要先提供初始值。
+    意思是說 let 我可以重新賦值也不會出錯，同時可以先 "let a "不需要先行定義數值；
+    const 則是只要重新賦值就會報錯，而且當指定常數時也要給予數值才能定義成功，" const a = 0 "
+</p>
+<body>
+    <script>
+        const userName = '木木木';
+        const age = 99;
+        const isStudent = true;
+        console.log("我叫" + userName + "，今年" + age + "歲" )
+        console.log(`我叫${userName}，今年${age}歲`)
+        console.log("我叫",userName,"，今年",age,"歲")
+        console.log(isStudent)
+        // userName、age、isStudent 不會再重新宣告，所以用 const
+    </script>
+</body>
+</html>
